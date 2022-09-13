@@ -4,7 +4,7 @@ services:
     build: ./server
     container_name: docker_server
     ports:
-      - 3000:3000
+      - 5000:5000
     volumes:
       - ./server:/app
       - ./app/node_module
