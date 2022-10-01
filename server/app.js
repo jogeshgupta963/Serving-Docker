@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.Router())
 
 app.get('/',(req,res)=>{
-	res.send("hello on index " +process.env.name);
+	res.send(`${process.env.name} hello on index`);
 })
 
 app.listen(5000,()=>{console.log("server runing on port 5000")});
